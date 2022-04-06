@@ -1,13 +1,14 @@
 <template>
   <div class="post">
-    <h1>This is an post page</h1>
     
     <div v-for="post in $route.query.posts" :key="post.id">
-      <ul  v-if="post.id === $route.params.id" >
-        
-        <li>{{post.id}} <img :src="'/assets/' + post.img"/></li>
+      
+      <ul  v-if="post.id === $route.params.id" id="post">
         <li>{{post.title}}</li>
+        <li><img :src="'/assets/' + post.img"/></li>
+        
         <li>{{post.description}}</li>
+        <li>{{post.text}}</li>
       </ul>
     </div>
   </div>
@@ -19,6 +20,17 @@
     props: ["posts"]
   }
 </script>
+
+<style>
+#post{
+  list-style-type: none;
+}
+
+img{
+  width: 400px;
+  height: auto;
+}
+</style>
 
 // Aidez michel
 // Image dans les vues
