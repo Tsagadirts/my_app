@@ -8,7 +8,7 @@
 
   <section v-else>
     <div v-if="loading">Chargement...</div>
-
+     <!-- afficher la description de la currency -->
     <div v-else v-for="currency in info" :key="currency.id" class="currency">
       {{ currency.description }}:
       <span class="lighten">
@@ -47,6 +47,7 @@ export default {
       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
       .then(response => {
         this.info = response.data.bpi
+        //donner  un id unique au composant 
         for(const key in this.info){
           this.info[key].id=Math.random()
         }
@@ -62,3 +63,12 @@ export default {
   
 }
 </script>
+
+<style>
+.currency{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+</style>

@@ -23,11 +23,14 @@
 
 nav {
   padding: 30px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #095416;
+  
 }
 
 nav a.router-link-exact-active {

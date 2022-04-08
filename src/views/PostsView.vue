@@ -31,3 +31,25 @@ export default{
      
 
 </script>
+
+
+
+<style>
+
+h1{
+  color: rgb(45, 73, 2);
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  color: rgb(45, 73, 2);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+a{
+  text-decoration: none;
+}
+
+
+</style>
