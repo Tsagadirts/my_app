@@ -2,6 +2,7 @@
   <div class="home" id="app">
     <h1>Articles</h1>
     <div class="title"></div>
+    <!-- faire la redirection a la page poste on passent les params a travers la query -->
     <router-link class="posts" v-for="post in posts" :key="post.id" :to="{name:'post', params:{id:post.id}, query:{posts:posts}}">
     <p>{{post.title}}</p>
 

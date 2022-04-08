@@ -3,7 +3,8 @@
     <nav>
       <router-link to="/">Users</router-link> |
       <router-link to="/Posts">Posts</router-link> |
-      <router-link to="/Post">Post</router-link>
+      <router-link to="/Post">Post</router-link>|
+      <routerLink to="/BitCoin">Bitcoin</routerLink>
     </nav>
     <router-view/>
   </div>
